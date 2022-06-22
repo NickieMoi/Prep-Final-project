@@ -9,12 +9,12 @@ html {
   
   .logo{
     text-align: center;
-    background-color: rgb(49, 109, 179);
+    background-color: rgb(97, 179, 49);
     color: white;
     padding: 0.5em;
   }
   
-  /*#Menu-bar {
+  #Menu-bar {
     height: 15vh;
     background: rgb(49, 109, 179);
     display: flex;
@@ -36,8 +36,8 @@ html {
   }
   
   .menu-procedure{
-    height: 550px;
-    padding: 30px;
+    height: 400px;
+    padding: 25px;
     font-size: 24px;
     border: dotted;
     text-align: center;
