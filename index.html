@@ -1,7 +1,7 @@
 <html>
   <head>
     <title>MyMealPal</title>
-    <link rel="stylesheet" href="./src/index.css">
+    <link rel="stylesheet" href="./src/index.css" />
   </head>
   <body>
     <div class="logo">
@@ -9,21 +9,25 @@
     </div>
 
     <div id="Menu-bar">
+      <ul class="delicacie" id="menu1"></ul>
       <!-- show characters names here -->
     </div>
 
     <div class="menu-procedure">
-      <div id="detailed-info">
-        <p id="name">Meal name</p>
-        <img
-        /><!-- display character image here -->
-        <h4>Your comments:</h4>
-        <form id="comment-form">
-          <input type="text" placeholder="enter comments here" id="comment" name="comment" />
-          <input type="submit" value="Add coments" id="submit" />
-        </form>
-      </div>
+      <div id="name">Meal name</div>
+      <!-- display character image here -->
+      <div class="image1"><img id="img" /></div>
+      <div id="detailed-info"></div>
     </div>
+
+    <h4>Your comments:</h4>
+    <form id="comment-form">
+      <input type="text" name="Comment" id="addcomment1" />
+      <button onclick="addComment()" aria-placeholder="Add a comment">
+        Comment
+      </button>
+    </form>
+    <ul id="addcomment"></ul>
     <footer>
       <ul>
         <li class="like">Like!<span class="like-glyph">&#x2661;</span></li>
