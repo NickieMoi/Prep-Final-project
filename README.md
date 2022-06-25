@@ -23,7 +23,7 @@ A Two single page website for a Meal Menu .
  [Go Back to the top](#MyMealPal)
  
 ### Live Link
-- Click this link to view the live application [nickiemoi.github.io/prep-final-project/]
+- Click this link to view the live application [https://github.com/NickieMoi/Prep-Final-project]
 ### Technology  Used
 
 * HTML - which was used to develope the structure off the pages.
