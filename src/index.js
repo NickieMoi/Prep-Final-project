@@ -1,21 +1,22 @@
-const linkUrl = "www.themealdb.com/api/json/v1/1/list.php?c=lis";
+const linkUrl = "https://www.themealdb.com/api/json/v1/1/search.php?f=f";
 const meal = document.getElementById("name");
 const image = document.getElementById("img");
 const Description = document.getElementById("detailed-info");
 const menu2 = document.getElementById("menu1");
 
 function foodDisplay(foodDescription) {
-  meal.innerText = foodDescription.strCategory;
-  image.src = foodDescription.strCategoryThumb;
-  Description.innerText = foodDescription.strCategoryDescription;
+  meal.innerText = foodDescription.strMeal;
+  image.src = foodDescription.strMealThumb;
+  Description.innerText = foodDescription.strInstructions;
 }
 
 fetch(linkUrl)
   .then((response) => response.json())
   .then((jsonData) => {
-    foodDisplay(jsonData[1]);
-    menuDisplay(jsonData);
+    foodDisplay(jsonData.meals[1]);
+    menuDisplay(jsonData.meals);
   });
+
 function menuDisplay(delicacies) {
   delicacies.forEach((foodDescription) => {
     const li = document.createElement("li");
@@ -39,6 +40,3 @@ document
     }
     addComment();
   });
-
-
-  
