@@ -54,11 +54,13 @@ input[type="text"] {
   padding-top: 1%;
   padding-bottom: 1%;
   margin: 0%;
+  cursor: zoom-in;
 }
 
 .delicacie > li {
   padding-right: 1.5%;
   font-weight: 500;
+  cursor: zoom-in;
 }
 
 #detailed-info {
@@ -74,6 +76,7 @@ input[type="text"] {
 #name {
   color: yellow;
   text-align: center;
+  cursor: zoom-in;
 }
 #addcomment{
   display: block;
