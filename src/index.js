@@ -1,4 +1,4 @@
-const linkUrl = "http://localhost:3000/categories";
+const linkUrl = "www.themealdb.com/api/json/v1/1/list.php?c=lis";
 const meal = document.getElementById("name");
 const image = document.getElementById("img");
 const Description = document.getElementById("detailed-info");
